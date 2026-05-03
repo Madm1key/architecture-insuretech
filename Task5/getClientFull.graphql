@@ -1,0 +1,16 @@
+query GetClientFull($id: ID!) {
+  client(id: $id) {
+    id
+    name
+    age
+    documents {
+      type
+      number
+      expiryDate
+    }
+    relatives {
+      relationType
+      name
+    }
+  }
+}
